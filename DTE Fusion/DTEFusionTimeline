@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai Tech Event Timeline</title>
+    <style>
+        /* Reset for the iframe container */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        
+        /* Container for the timeline */
+        .timeline-container {
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- This iframe will completely isolate the timeline from the rest of the page -->
+    <iframe class="timeline-container" id="timelineIframe" srcdoc='
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+            <style>
+                /* Scoped styles */
+                body {
+                    margin: 0;
+                    padding: 1rem;
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+                    background: white;
+                }
+                
+                .timeline-line {
+                    background: #a855f7;
+                }
+                
+                .font-roboto {
+                    font-family: "Roboto", sans-serif;
+                }
+                
+                .date-label {
+                    background: linear-gradient(135deg, #4e3cce, #c64dff);
+                }
+            </style>
+        </head>
+        <body class="bg-white font-sans text-gray-900">
+            <div class="max-w-5xl mx-auto px-4 py-10 relative">
+                <!-- Vertical timeline line -->
+                <div class="hidden sm:block absolute top-6 left-10 h-[calc(100%-3rem)] w-1 timeline-line rounded-full"></div>
+
+
+                <!-- Day 0 -->
+                <div class="relative flex flex-col sm:flex-row sm:items-start mb-14 sm:mb-20">
+                    <!-- Day label -->
+                    <div class="date-label flex items-center gap-2 text-white rounded-full px-4 py-2 text-sm font-semibold mb-4 sm:mb-0 sm:ml-0">
+                        <i class="fas fa-calendar-alt text-xs"></i>
+                        <span>Oct 8</span>
+                    </div>
+                    <!-- Content box -->
+                    <div class="bg-white rounded-xl shadow-md p-6 sm:ml-8 w-full sm:w-[calc(100%-10rem)]">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                            <div>
+                                <h2 class="font-roboto font-medium text-xl leading-tight text-gray-900">
+                                    Depart to U.S.
+                                </h2>
+                                <p class="text-gray-500 mt-1 max-w-xl">
+                                    ✈ Travel and official departure for international conference participation.
+                                </p>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-800 text-sm font-medium">
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Startup Pavilion Showcase</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Investor Pitch Sessions</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Partnership Meetings</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Industry Workshops</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                 <!-- Day Travel -->
+                <div class="relative flex flex-col sm:flex-row sm:items-start mb-14 sm:mb-20">
+                    <!-- Day label -->
+                    <div class="date-label flex items-center gap-2 text-white rounded-full px-4 py-2 text-sm font-semibold mb-4 sm:mb-0 sm:ml-0">
+                        <i class="fas fa-calendar-alt text-xs"></i>
+                        <span>Oct 9</span>
+                    </div>
+                    <!-- Content box -->
+                    <div class="bg-white rounded-xl shadow-md p-6 sm:ml-8 w-full sm:w-[calc(100%-10rem)]">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                            <div>
+                                <h2 class="font-roboto font-medium text-xl leading-tight text-gray-900">
+                                    Arrive in Dubai U.A.E
+                                </h2>
+                                <p class="text-gray-500 mt-1 max-w-xl">
+                                   🌍 Arrival and registration for the main conference and startup pavilion.
+                                </p>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-800 text-sm font-medium">
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Startup Pavilion Showcase</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Investor Pitch Sessions</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Partnership Meetings</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Industry Workshops</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+
+                <!-- Day 1 -->
+                <div class="relative flex flex-col sm:flex-row sm:items-start mb-14 sm:mb-20">
+                    <!-- Day label -->
+                    <div class="date-label flex items-center gap-2 text-white rounded-full px-4 py-2 text-sm font-semibold mb-4 sm:mb-0 sm:ml-0">
+                        <i class="fas fa-calendar-alt text-xs"></i>
+                        <span>Oct 10</span>
+                    </div>
+                    <!-- Content box -->
+                    <div class="bg-white rounded-xl shadow-md p-6 sm:ml-8 w-full sm:w-[calc(100%-10rem)]">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                            <div>
+                                <h2 class="text-lg font-medium leading-tight text-xl text-gray-900 font-roboto">
+                                    Dubai Tech Experience Summit (Day 1)
+                                </h2>
+                                <p class="text-gray-500 mt-1 max-w-xl">
+                                🚀 Immersive tech tour showcasing Dubai&apos;s innovation ecosystem.
+					         </p>
+                            </div>
+                        </div>
+                        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-800 text-sm font-medium">
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Speed Networking and Receptions</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Government Guest Speakers</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Cultural Exchange Program</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Government Pitch Competition</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Day 4 -->
+                <div class="relative flex flex-col sm:flex-row sm:items-start mb-14 sm:mb-20">
+                    <!-- Day label -->
+                    <div class="date-label flex items-center gap-2 text-white rounded-full px-4 py-2 text-sm font-semibold mb-4 sm:mb-0 sm:ml-0">
+                        <i class="fas fa-calendar-alt text-xs"></i>
+                        <span>Oct 11</span>
+                    </div>
+                    <!-- Content box -->
+                    <div class="bg-white rounded-xl shadow-md p-6 sm:ml-8 w-full sm:w-[calc(100%-10rem)]">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                            <div>
+                                <h2 class="font-roboto font-medium text-xl leading-tight text-gray-900">
+                                    Tour of Dubai - Tech Ecosystem Tour
+                                </h2>
+                                <p class="text-gray-500 mt-1 max-w-xl">
+                                    🔍 Explore Dubai’s thriving innovation hubs, accelerators, and leading tech spaces.
+                                </p>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-800 text-sm font-medium">
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Startup Pavilion Showcase</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Investor Pitch Sessions</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Partnership Meetings</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Industry Workshops</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+
+                <!-- Day 5 -->
+                <div class="relative flex flex-col sm:flex-row sm:items-start mb-14 sm:mb-20">
+                    <!-- Day label -->
+                    <div class="date-label flex items-center gap-2 text-white rounded-full px-4 py-2 text-sm font-semibold mb-4 sm:mb-0 sm:ml-0">
+                        <i class="fas fa-calendar-alt text-xs"></i>
+                        <span>Oct 12-15</span>
+                    </div>
+                    <!-- Content box -->
+                    <div class="bg-white rounded-xl shadow-md p-6 sm:ml-8 w-full sm:w-[calc(100%-10rem)]">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                            <div>
+                                <h2 class="font-roboto font-medium text-xl leading-tight text-gray-900">
+                                    Expand North Star Exhibition Days (Day 2-5)
+                                </h2>
+                                <p class="text-gray-500 mt-1 max-w-xl">
+                                    🌐 Showcase your startup at the U.S. pavilion
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-800 text-sm font-medium">
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Curated Investor Meetings</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>SuperNova Pitch Competition</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Industry Workshops</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Partnership/Customer Meetings</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 6 -->
+                <div class="relative flex flex-col sm:flex-row sm:items-start mb-14 sm:mb-20">
+                    <!-- Day label -->
+                    <div class="date-label flex items-center gap-2 text-white rounded-full px-4 py-2 text-sm font-semibold mb-4 sm:mb-0 sm:ml-0">
+                        <i class="fas fa-calendar-alt text-xs"></i>
+                        <span>Oct 13</span>
+                    </div>
+                    <!-- Content box -->
+                    <div class="bg-white rounded-xl shadow-md p-6 sm:ml-8 w-full sm:w-[calc(100%-10rem)]">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                            <div>
+                                <h2 class="font-roboto font-medium text-xl leading-tight text-gray-900">
+                                    Startup Mixer (Day 6)
+                                </h2>
+                                <p class="text-gray-500 mt-1 max-w-xl">
+                                    🤝 Exclusive networking event with regional investors and entrepreneurs
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-800 text-sm font-medium">
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Startup Speed Networking</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Networking with Global Startup Founders</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Network with Global Investors</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Investor Roundtable Discussions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Day 7 -->
+                <div class="relative flex flex-col sm:flex-row sm:items-start mb-14 sm:mb-20">
+                    <!-- Day label -->
+                    <div class="date-label flex items-center gap-2 text-white rounded-full px-4 py-2 text-sm font-semibold mb-4 sm:mb-0 sm:ml-0">
+                        <i class="fas fa-calendar-alt text-xs"></i>
+                        <span>Oct 16</span>
+                    </div>
+                    <!-- Content box -->
+                    <div class="bg-white rounded-xl shadow-md p-6 sm:ml-8 w-full sm:w-[calc(100%-10rem)]">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                            <div>
+                                <h2 class="font-roboto font-medium text-xl leading-tight text-gray-900">
+                                    Explore GITEX Global/ DTE Pitch Competition (Day 7)
+                                </h2>
+                                <p class="text-gray-500 mt-1 max-w-xl">
+                                    🎤 Participate in global pitch sessions and explore innovation showcases at GITEX.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-800 text-sm font-medium">
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Mixer with Investors</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>3 minutes pitches</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Announce Winner</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Award 10k Cash Prize</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Day 8 -->
+                <div class="relative flex flex-col sm:flex-row sm:items-start mb-14 sm:mb-20">
+                    <!-- Day label -->
+                    <div class="date-label flex items-center gap-2 text-white rounded-full px-4 py-2 text-sm font-semibold mb-4 sm:mb-0 sm:ml-0">
+                        <i class="fas fa-calendar-alt text-xs"></i>
+                        <span>Oct 17</span>
+                    </div>
+                    <!-- Content box -->
+                    <div class="bg-white rounded-xl shadow-md p-6 sm:ml-8 w-full sm:w-[calc(100%-10rem)]">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                            <div>
+                                <h2 class="font-roboto font-medium text-xl leading-tight text-gray-900">
+                                    Government Pilot Projects (Day 8)
+                                </h2>
+                                <p class="text-gray-500 mt-1 max-w-xl">
+                                    🏛 Engage with government leaders and explore pilot initiatives for startups.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-800 text-sm font-medium">
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Startup Pavilion Showcase</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Investor Pitch Sessions</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Partnership Meetings</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Industry Workshops</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <!-- Day 9 -->
+                <div class="relative flex flex-col sm:flex-row sm:items-start mb-14 sm:mb-20">
+                    <!-- Day label -->
+                    <div class="date-label flex items-center gap-2 text-white rounded-full px-4 py-2 text-sm font-semibold mb-4 sm:mb-0 sm:ml-0">
+                        <i class="fas fa-calendar-alt text-xs"></i>
+                        <span>Oct 18</span>
+                    </div>
+                    <!-- Content box -->
+                    <div class="bg-white rounded-xl shadow-md p-6 sm:ml-8 w-full sm:w-[calc(100%-10rem)]">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                            <div>
+                                <h2 class="font-roboto font-medium text-xl leading-tight text-gray-900">
+                                    Explore GITEX Global + Meetings (Day 9)
+                                </h2>
+                                <p class="text-gray-500 mt-1 max-w-xl">
+                                    🤝 Attend curated meetings while discovering groundbreaking technologies at GITEX.
+                                </p>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-800 text-sm font-medium">
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Startup Pavilion Showcase</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Investor Pitch Sessions</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Partnership Meetings</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-gray-50 rounded-lg px-4 py-2">
+                                <span class="w-2 h-2 rounded-full bg-purple-400 inline-block"></span>
+                                <span>Industry Workshops</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+                // Adjust iframe height to content
+                window.addEventListener("load", function() {
+                    const body = document.body;
+                    const html = document.documentElement;
+                    const height = Math.max(
+                        body.scrollHeight, body.offsetHeight,
+                        html.clientHeight, html.scrollHeight, html.offsetHeight
+                    );
+                    
+                    window.parent.postMessage({
+                        type: "setIframeHeight",
+                        height: height
+                    }, "*");
+                });
+            </script>
+        </body>
+        </html>
+    '>
+    </iframe>
+
+    <script>
+        // Listen for height updates from the iframe
+        window.addEventListener('message', function(event) {
+            if (event.data.type === 'setIframeHeight') {
+                document.getElementById('timelineIframe').style.height = event.data.height + 'px';
+            }
+        });
+        
+        // Fallback height adjustment
+        setTimeout(function() {
+            const iframe = document.getElementById('timelineIframe');
+            if (iframe.contentWindow && iframe.contentWindow.document.body) {
+                iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
